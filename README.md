@@ -15,7 +15,7 @@ Two fully-formed components have already been included, to be used as-needed in 
 
 Additionally, all of the colors you'll need are indexed in `constants.js`.
 
-All components in this project use [the `Roboto` font](https://fonts.google.com/specimen/Roboto). This font is already included in the Storybook environment, and is already applied to all elements. It comes in two weights:
+All components in this project use [the `Roboto` font](https://fonts.google.com/specimen/Roboto). This font is already included in Chrome, but you are free to make & add to `.storybook/preview-head.html`. Two weights are used:
 
 - 400 (default)
 - 700 (bold)
@@ -24,13 +24,9 @@ All components in this project use [the `Roboto` font](https://fonts.google.com/
 
 This project uses Storybook, a component development tool.
 
-First, install dependencies with `npm install`.
+First, install dependencies with `npm i`. (WARN: Must have `package-lock.json` or install tree will corrupt)
 
-Once dependencies are installed, you can start storybook by running:
-
-```
-npm run start
-```
+Once dependencies are installed, you can start storybook by running: `npm start`
 
 Once running, you can visit storybook at http://localhost:6006.
 
@@ -54,10 +50,8 @@ The Select component will need a down-arrow icon! You can use the `chevron-down`
 
 We want to use a native `<select>` tag in this component, so a bit of precursory HTML has been provided.
 
-This component also includes a function, `getDisplayedValue`. This component uses some React APIs to work out the text that should be displayed. The value isn't currently used, but you can make use of it if needed, depending on your implementation.
-
 ### IconInput
 
 This component also uses the `Icon` component — the specific ID will be provided as a prop.
 
-This component requires bold text. You can achieve this look by using `font-weight: 700`.
+This component requires bold text. You can achieve this look by using `font-weight: 700` or `font-weight: bold`.

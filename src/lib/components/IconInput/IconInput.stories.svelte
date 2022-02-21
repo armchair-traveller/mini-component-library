@@ -1,5 +1,7 @@
-import { Meta, Story } from '@storybook/addon-docs/blocks';
-import IconInput from './IconInput';
+<script>
+import { Meta, Story, Template } from '@storybook/addon-svelte-csf'
+import IconInput from './IconInput.svelte'
+</script>
 
 <Meta
   title="IconInput"
@@ -30,9 +32,10 @@ import IconInput from './IconInput';
   }}
 />
 
-export const Template = (args) => <IconInput {...args} />;
-
-# IconInput
+<h1>IconInput</h1>
+<Template let:args>
+  <IconInput {...args} />
+</Template>
 
 <Story
   name="Default"
@@ -42,6 +45,4 @@ export const Template = (args) => <IconInput {...args} />;
     icon: 'search',
     size: 'small',
   }}
->
-  {Template.bind({})}
-</Story>
+/>

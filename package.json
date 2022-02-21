@@ -2,45 +2,29 @@
   "name": "mini-component-library",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "babel-loader": "8.2.2",
-    "babel-plugin-styled-components": "1.12.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-feather": "2.0.9",
-    "react-scripts": "4.0.1",
-    "styled-components": "5.2.1"
-  },
   "scripts": {
-    "storybook": "start-storybook -p 6006 -s public",
-    "start": "start-storybook -p 6006 -s public"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "start": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "package": "svelte-kit package",
+    "preview": "svelte-kit preview"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "6.2.7",
-    "@storybook/addon-controls": "6.2.7",
-    "@storybook/addon-essentials": "6.2.7",
-    "@storybook/addon-links": "6.2.7",
-    "@storybook/node-logger": "6.2.7",
-    "@storybook/preset-create-react-app": "3.1.7",
-    "@storybook/react": "6.2.7",
-    "webpack": "4.44.2"
-  }
+    "@babel/core": "^7.16.7",
+    "@stitches/core": "^1.2.6",
+    "@storybook/addon-actions": "^6.5.0-alpha.10",
+    "@storybook/addon-essentials": "^6.5.0-alpha.10",
+    "@storybook/addon-links": "^6.5.0-alpha.10",
+    "@storybook/addon-svelte-csf": "^1.1.0",
+    "@storybook/svelte": "^6.5.0-alpha.10",
+    "@sveltejs/adapter-auto": "1.0.0-next.17",
+    "@sveltejs/kit": "1.0.0-next.278",
+    "@svicons/feather": "^0.1.6",
+    "babel-loader": "^8.2.3",
+    "svelte": "^3.45.0",
+    "svelte-loader": "^3.1.2"
+  },
+  "type": "module"
 }

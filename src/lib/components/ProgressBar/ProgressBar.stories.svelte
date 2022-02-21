@@ -1,5 +1,7 @@
-import { Meta, Story } from '@storybook/addon-docs/blocks';
-import ProgressBar from './ProgressBar';
+<script>
+import { Meta, Story, Template } from '@storybook/addon-svelte-csf'
+import ProgressBar from './ProgressBar.svelte'
+</script>
 
 <Meta
   title="ProgressBar"
@@ -21,10 +23,9 @@ import ProgressBar from './ProgressBar';
   }}
 />
 
-export const Template = (args) => <ProgressBar {...args} />;
+<h1>ProgressBar</h1>
+<Template let:args>
+  <ProgressBar {...args} />
+</Template>
 
-# ProgressBar
-
-<Story name="Default" args={{ value: 50, size: 'medium' }}>
-  {Template.bind({})}
-</Story>
+<Story name="Default" args={{ value: 50, size: 'medium' }} />
